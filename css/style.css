@@ -1,0 +1,88 @@
+* {
+  font-family: 'Roboto';
+}
+
+.header {
+  position: absolute;
+  width: 1440px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #2D3748;
+}
+
+.logo {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 72px;
+  top: 24.31px;
+}
+
+.polygon1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 3px;
+  top: -1.69px;
+  box-sizing: border-box;
+}
+
+.polygon2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -3px;
+  top: 2.31px;
+  box-sizing: border-box;
+}
+
+.text {
+  position: absolute;
+  width: 84px;
+  height: 23px;
+  left: 117px;
+  top: 29px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.pro-plan {
+  position: absolute;
+  width: 82px;
+  height: 32px;
+  left: 1240px;
+  top: 24px;
+  background: #ED64A6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro-plan-text {
+  position: absolute;
+  width: 57px;
+  height: 18px;
+  /* left: 1254px; */
+  /* top: 31px; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFCFE;
+}
+
+.mask {
+  position: absolute;
+  background-image: url("../images/image.png");
+  width: 50px;
+  height: 50px;
+  left: 1352px;
+  top: 15px;
+  border-radius: 50px;
+  background-size: cover;
+}

@@ -6,16 +6,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create_view</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="./images/Polygon (1).png" alt="" class="polygon1">
-            <img src="./images/Polygon.png" alt="" class="polygon2">
+        <div class="containerr">
+            <div class="h-logo">
+                <div class="logo">
+                    <img src="./images/Group.svg" alt="" class="group">
+                </div>
+                <div class="text">TTT <span style="color: rgb(99 179 237); font-weight: 500;">CMS</span></div>
+            </div>
+            <div class="h-pro">
+                <div class="pro-plan"><span class="pro-plan-text">Pro plan</span></div>
+                <div class="mask"></div>
+            </div>
         </div>
-        <div class="text">TTT <span style="color: rgb(99 179 237); font-weight: 500;">CMS</span></div>
-        <div class="pro-plan"><span class="pro-plan-text">Pro plan</span></div>
-        <div class="mask"></div>
     </div>
+    <div class="body">
+        <div class="nav-vertical">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link manager">Manage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/home.svg" alt=""> View site</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/file-plus.svg" alt="">Create page</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/pen-tool.svg" alt="">Blog articles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/image.svg" alt="">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/users.svg" alt="">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/zap.svg" alt="">Subscriptions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/trash-2.svg" alt="">Archived pages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link pro">Pro features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/book-open.svg" alt="">Themes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/box.svg" alt="">Plugins</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dot"><img src="./images/coffee.svg" alt="">Upgrade plans</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="title">
+                <span class="title-text page">Page title</span>
+                <span class="title-text created">Created</span>
+                <span class="title-text status">Status</span>
+                <span class="title-text author">Author</span>
+                <button class="btn-add">
+                    <img src="./images/file-plus2.svg" class="btn-file-plus" alt="">
+                    <span class="btn">Add new</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <span class="page-item page-title">Home_page</span>
+                    <span class="page-item page-created">Updated 3 weeks ago</span>
+                    <div class="container-status"><button class="page-item page-status"><span>Published</span></button></div>
+                    <span class="page-item page-author">Joe Bloggs</span>
+                    <div class="container-status"><button class="page-item page-access"><span>Admin</span></button></div>
+                    <div class="container-status show">
+                        <span class="page-item page-spread">
+                            <img src="./images/more-horizontal.svg" alt="">
+                        </span>
+                        <div class="manage-hover">
+                            <div class="manage-title"><span class="">Manage</span></div>
+                            <div class="edit">
+                                <img src="./images/edit.svg" alt="">
+                                <span>Edit file name</span>
+                            </div>
+                            <div class="trash">
+                                <img src="./images/trash-3.svg" alt="">
+                                <span>Delete file</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="page-item page-title">About_page</span>
+                    <span class="page-item page-created">Updated 3 weeks ago</span>
+                    <div class="container-status"><button class="page-item page-status"><span>Published</span></button></div>
+                    <span class="page-item page-author">Joe Bloggs</span>
+                    <div class="container-status"><button class="page-item page-access"><span>Admin</span></button></div>
+                    <div class="container-status show">
+                        <span class="page-item page-spread">
+                            <img src="./images/more-horizontal.svg" alt="">
+                        </span>
+                        <div class="manage-hover">
+                            <div class="manage-title"><span class="">Manage</span></div>
+                            <div class="edit">
+                                <img src="./images/edit.svg" alt="">
+                                <span>Edit file name</span>
+                            </div>
+                            <div class="trash">
+                                <img src="./images/trash-3.svg" alt="">
+                                <span>Delete file</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="page-item page-title">Home_page</span>
+                    <span class="page-item page-created">Updated 3 weeks ago</span>
+                    <div class="container-status"><button class="page-item page-status"><span>Published</span></button></div>
+                    <span class="page-item page-author">Joe Bloggs</span>
+                    <div class="container-status"><button class="page-item page-access"><span>Admin</span></button></div>
+                    <div class="container-status show">
+                        <span class="page-item page-spread">
+                            <img src="./images/more-horizontal.svg" alt="">
+                        </span>
+                        <div class="manage-hover">
+                            <div class="manage-title"><span class="">Manage</span></div>
+                            <div class="edit">
+                                <img src="./images/edit.svg" alt="">
+                                <span>Edit file name</span>
+                            </div>
+                            <div class="trash">
+                                <img src="./images/trash-3.svg" alt="">
+                                <span>Delete file</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="page-item page-title">About_page</span>
+                    <span class="page-item page-created">Updated 3 weeks ago</span>
+                    <div class="container-status"><button class="page-item page-status"><span>Published</span></button></div>
+                    <span class="page-item page-author">Joe Bloggs</span>
+                    <div class="container-status"><button class="page-item page-access"><span>Admin</span></button></div>
+                    <div class="container-status show">
+                        <span class="page-item page-spread">
+                            <img src="./images/more-horizontal.svg" alt="">
+                        </span>
+                        <div class="manage-hover">
+                            <div class="manage-title"><span class="">Manage</span></div>
+                            <div class="edit">
+                                <img src="./images/edit.svg" alt="">
+                                <span>Edit file name</span>
+                            </div>
+                            <div class="trash">
+                                <img src="./images/trash-3.svg" alt="">
+                                <span>Delete file</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="page-item page-title">About_page</span>
+                    <span class="page-item page-created">Updated 3 weeks ago</span>
+                    <div class="container-status"><button class="page-item page-status"><span>Published</span></button></div>
+                    <span class="page-item page-author">Joe Bloggs</span>
+                    <div class="container-status"><button class="page-item page-access"><span>Admin</span></button></div>
+                    <div class="container-status show">
+                        <span class="page-item page-spread">
+                            <img src="./images/more-horizontal.svg" alt="">
+                        </span>
+                        <div class="manage-hover">
+                            <div class="manage-title"><span class="">Manage</span></div>
+                            <div class="edit">
+                                <img src="./images/edit.svg" alt="">
+                                <span>Edit file name</span>
+                            </div>
+                            <div class="trash">
+                                <img src="./images/trash-3.svg" alt="">
+                                <span>Delete file</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>

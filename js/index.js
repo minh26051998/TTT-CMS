@@ -16,20 +16,13 @@ navItems.forEach((navItem, index) => {
 })
 
 
-// var pageSpreads = document.querySelectorAll(".page-spread");
-// var manageHovers = document.querySelectorAll(".manage-hover");
-// var spreadActive = document.getElementsByClassName("page-spread");
+// var icon = document.getElementById("menu");
+// var menu = document.getElementById("nav-show");
+// icon.addEventListener("click", function() {
+//     menu.classList.add("active");
+// })
 
-// var active = true;
-// pageSpreads.forEach((pageSpread, index) => {
-//     pageSpread.addEventListener("click", function() {
-//         // manageHovers[index].style.display = 'block';
-//         if(active) {
-//             manageHovers[index].classList.add("active");
-//             active = !active;
-//         }else {
-//             manageHovers[index].classList.remove("active");
-//             active = !active;
-//         }
-//     })
-// });
+// var close = document.getElementById("close");
+// close.addEventListener("click", function() {
+//     menu.classList.remove("active");
+// })

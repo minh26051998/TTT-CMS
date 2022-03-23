@@ -26,3 +26,14 @@ navItems.forEach((navItem, index) => {
 // close.addEventListener("click", function() {
 //     menu.classList.remove("active");
 // })
+
+function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("demo").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../register.html", true);
+    xhttp.send();
+  }

@@ -1,0 +1,170 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247 250 252);;
+}
+
+form {
+    box-sizing: border-box;
+    width: 512px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 26px;
+}
+
+.text {
+    font-size: 30px;
+    margin-bottom: 39px;
+}
+
+.text,.form-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-email {
+    display: block;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2A4365;
+    cursor: pointer;
+    padding-bottom: 21px;
+}
+
+.text-password {
+    display: block;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2A4365;
+    cursor: pointer;
+    padding: 21px 0px;
+}
+
+
+.icon {
+    width:24px;
+    height: 24px;
+    margin-right: 13px;
+}
+
+.input-email {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    background: #EDF2F7;
+    border-radius: 5px;
+    font-size: 34px;
+    border: none;
+    /* margin: 21px 0px; */
+    color: #2a4365;
+    padding: 0px 20px;
+}
+
+.input-email:focus {
+    outline: none;
+    border: 1px solid #2a4365;  
+}
+
+.signin {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.btn-signin {
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 210px;
+    height: 61px;
+    background-color: #2A4365;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-signin:hover {
+    background-color: #10315f;
+}
+
+.forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3182CE;
+    text-decoration: none;
+    font-size: 20px;
+}
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.btn-register {
+    box-sizing: border-box;
+    margin-top: 43px;
+    width: 100%;
+    height: 61px;
+    background-color: #fff;
+    color: #2A4365;
+    border: 1px solid #2A4365;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: #2A4365;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 882px) {
+    form {
+        width: 100%;
+        margin: 0px 20px;
+    }
+    .input-email {
+        width: 100%;
+    }
+    .text-email,.text-password {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .signin {
+        display: block;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    form {margin: 0;}
+}

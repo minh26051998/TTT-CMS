@@ -107,22 +107,27 @@
   background-size: cover;
 }
 
-.body {display: flex;}
+.body {display: flex; width: 100%; height: 100%;}
 
 /* nav-vertical */
 .nav-vertical {
   /* position: absolute; */
   width: 160px;
-  height: 596px;
+  /* height: 596px; */
   left: 0px;
   top: 80px;
   background-color: #E5E5E5;
   padding: 72px 80px 152px 70px;
+  height: 100%;
 }
 
 .nav-menu {
   padding: 0px;
   margin: 0px;
+  display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav-item {
@@ -434,19 +439,9 @@
 }
 
 @media screen and (max-width: 882px) {
-
-}
-
-@media screen and (max-width: 882px) {
   .nav-vertical {display: none;}
-  /* .content {width: 1440px;} */
   .title {width: 100%;}
   .header {position: relative;}
-  /* .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   .item {
     display: flex;
     justify-content: space-between;
@@ -521,10 +516,10 @@
   position: absolute;
   top: -15px;
   left: -10px;
-  padding: 10px 100px 10px 30px;
+  padding: 0px 100px 0px 30px;
   display: none;
   overflow: scroll;
-  height: 800px;
+  height: 100vh;
 }
 
 .nav-vertical-re ul .nav-item{
@@ -586,9 +581,22 @@ input[type="checkbox"]:checked~.menu-label {
   margin-bottom: 8px;
 }
 
+.table-mb tbody {
+  display: block;
+}
+
+.table-mb tbody tr {display: block; height: auto;}
+.table-mb tbody tr td{display: block; height: auto;}
+
 @media screen and (max-width: 882px) {
-  .table-mb {display: block;}
-  .pc-show {display: none;}
+    /* .table-mb {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0px 9px;
+    } */
+  /* .table-mb {display: block;} */
+  /* .pc-show {display: none;} */
+  .content {overflow-x: scroll;}
   .item-reponsive {
     display: block;
     margin-top: 3px;
@@ -598,9 +606,8 @@ input[type="checkbox"]:checked~.menu-label {
   .title {display: none;}
   .content {
     width: -webkit-fill-available;
-    margin: 0;
+    margin: 0px 20px;
   }
-  /* .header {width: auto !important;} */
   .menu-reponsive {display: flex;}
   .header {position: fixed; width: 100%;}
   .body {margin-top: 80px;}
@@ -611,7 +618,6 @@ input[type="checkbox"]:checked~.menu-label {
 
 @media screen and (max-width: 458px) {
   .pro-plan {display: none;}
-  /* .mask {margin: 0;} */
 }
 
 .table {
